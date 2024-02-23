@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #111111;
+    color: white;
+    font-family: Poppins, sans-serif;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 360px;
+    margin-bottom: 20px;
+    color: hotpink;
+    font-size: 1.25em;
+}
+
+.slot-machine {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    /* Adjust for 3x3 grid */
+    grid-gap: 10px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 20px hotpink;
+}
+
+.slot {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border: 2px solid #fff;
+    border-radius: 16px;
+}
+
+.messageArea {
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+}
+
+button {
+    font-weight: bold;
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-size: 1.25em;
+    cursor: pointer;
+    background-color: hotpink;
+    border: hotpink;
+    border-radius: 6px;
+    box-shadow: 0 0 20px hotpink;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.bet {
+    background-color: hotpink;
+    border: 2px solid hotpink;
+    border-radius: 6px;
+    font-size: 0.75em;
+    font-family: Poppins, sans-serif;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+@keyframes flash {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.slot {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border: 2px solid hotpink;
+    border-radius: 10px;
+    animation: spin 0.5s ease-in-out;
+}
+
+.flash {
+    animation: flash 0.5s ease-in-out infinite;
+}

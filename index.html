@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slot Machine:)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="info">
+      <div>Balance: $<span id="balance">1000</span></div>
+      <div>
+        Bet:
+        <select class="bet" id="betAmount">
+          <option value="5">$5</option>
+          <option value="10" selected>$10</option>
+          <option value="50">$50</option>
+          <option value="100">$100</option>
+          <option value="250">$250</option>
+          <option value="500">$500</option>
+          <option value="1000">$1000</option>
+          <option value="5000">$5000</option>
+          <option value="10000">$10000</option>
+          <option value="100000">$100000</option>
+          <option value="1000000">$1000000</option>
+        </select>
+      </div>
+      <div class="messageArea" id="messageArea"></div>
+      <!-- Message area for alerts -->
+    </div>
+    <div class="slot-machine" id="slotMachine"></div>
+    <button id="spin">Spin</button>
+    <script src="script.js"></script>
+  </body>
+</html>
