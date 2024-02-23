@@ -1,2 +1,2 @@
-# Slotiky
-[Pages](https://holiautisti.github.io/Slotiky/)
+# slotiky
+[Pages](https://holiautisti.github.io/slotiky-fix/)
